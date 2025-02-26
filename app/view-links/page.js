@@ -1,0 +1,32 @@
+"use client";
+
+import Card from '@components/Card';
+import React, { useEffect, useState } from 'react'
+// import data from '@utils/cardData'
+const AllBookmarks = () => {
+    const [bookmarks, setBookmarks] = useState([]);
+
+    //fetch cardData.json
+    useEffect(()=>{
+        fetch('data/cardData.json')
+        .then((res)=> res.json())
+        .then((data)=> setBookmarks(data))
+        .catch((err)=> console.log("Error feteching data" , err));
+    },[])
+
+    console.log(bookmarks);
+  return (
+    <div>
+        <h2 className='text-4xl blue_gradient font-semibold text-center mt-4'>All Bookmarks</h2>
+        <div className='mt-5 mx-6 flex flex-col gap-1'>
+            {
+              bookmarks.map((link, index)=> {
+                return <Card link={link} key={index}/>
+              })
+            }
+        </div>
+    </div>
+  )
+}
+
+export default AllBookmarks

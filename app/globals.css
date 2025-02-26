@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,3 +21,89 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/30 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.3)] backdrop-blur p-5;
+}
+
+.form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm flex items-center justify-center;
+}
+
+.outline_btn {
+  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm flex items-center justify-center;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.tags-input-container{
+  outline: none;
+  font-size: small;
+  color: #9E9E9E;
+  padding: .5em;
+  border-radius: 3px;
+  width: min(80vw, 600px);
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5em;
+}
+
+.tag-item{
+  background-color: rgb(218, 216, 216);
+  display: inline-block;
+  padding: .5em .75em;
+  border-radius: 20px;
+}
+.tag-item .close{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(48, 48, 48);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: .5em;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tags-input{
+  flex-grow: 1;
+  padding: .5em 0;
+  border: none;
+  outline: none;
+}
+
+input[type="radio"] {
+  accent-color: black; /* Change this to any color */
+}
+
