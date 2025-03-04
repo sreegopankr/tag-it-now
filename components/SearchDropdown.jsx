@@ -20,7 +20,7 @@ function SearchDropdown({ post, setPost }) {
     }
 
   return (
-    <div style={{ width: "300px", margin: "10px" }}>
+    <div style={{ width: "300px" }}>
       <Select
         options={options}
         value={selectedOption}

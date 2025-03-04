@@ -27,7 +27,7 @@ function TagsInput({ post, setPost}){
                     <span className="close" onClick={() => removeTag(index)}>&times;</span>
                 </div>
             )) }
-            <input onKeyDown={handleKeyDown} type="text" className="tags-input" placeholder="Type a tag and press Enter"/>
+            <input onKeyDown={handleKeyDown} type="text" className="form_input" placeholder="Type a tag and press Enter"/>
         </div>
     )
 }

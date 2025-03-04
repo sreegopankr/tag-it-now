@@ -1,10 +1,12 @@
 "use client";
 
 import Card from '@components/Card';
+import EditModal from '@components/EditModal';
 import React, { useEffect, useState } from 'react'
-// import data from '@utils/cardData'
+
 const AllBookmarks = () => {
     const [bookmarks, setBookmarks] = useState([]);
+    const [showEdit, setShowEdit] = useState(false);
 
     //fetch cardData.json
     useEffect(()=>{
@@ -21,10 +23,11 @@ const AllBookmarks = () => {
         <div className='mt-5 mx-6 flex flex-col gap-1'>
             {
               bookmarks.map((link, index)=> {
-                return <Card link={link} key={index}/>
+                return <Card link={link} key={index} setShowEdit={setShowEdit}/>
               })
             }
         </div>
+        {showEdit && <EditModal onClose = {()=> setShowEdit(false)}/>}
     </div>
   )
 }
