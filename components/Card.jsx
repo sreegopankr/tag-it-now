@@ -2,13 +2,22 @@ import React from 'react'
 import { MdDelete } from "react-icons/md";
 import { FaRegEdit } from "react-icons/fa";
 import { FaFolder } from "react-icons/fa";
+import { GrView } from "react-icons/gr";
+import { redirect } from '@node_modules/next/navigation';
+
 
 
 const Card = ({ link, setShowEdit }) => {
   // console.log(link.image)
 
+  const handleView = (e)=>{
+    console.log(e.target.closest('.card').id);
+    const _id = e.target.closest('.card').id;
+    redirect(`/${_id}`)
+  }
+
   return (
-    <div className='relative group'>
+    <div className='relative group card' id={link.id}>
 
       <a href={link.url} className="flex items-center bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 pl-2">
         <img src={link.image} alt="preview" className="object-cover rounded-s-lg w-[56px] h-[48px] " />
@@ -28,6 +37,7 @@ const Card = ({ link, setShowEdit }) => {
       </a>
 
       <div className='absolute top-5 right-5 hidden gap-3 group-hover:flex'>
+        <button className='bg-gray-300 p-2 text-sm rounded-md' onClick={(e) => handleView(e) }><GrView size={20}/></button>
         <button className='bg-gray-300 p-2 text-sm rounded-md' onClick={() => setShowEdit(true) }><FaRegEdit size={19} /></button>
         <button className='bg-gray-300 p-2 text-sm rounded-md' onClick={() => console.log("Hi Delete")}><MdDelete size={20} /></button>
       </div>

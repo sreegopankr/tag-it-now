@@ -1,5 +1,6 @@
 [
     {
+      "id": "1",
       "title": "Striver's A2Z DSA Course",
       "description": "A well-structured DSA course with curated problems covering all topics.",
       "image": "https://images.unsplash.com/photo-1718563552473-2d97b224e801?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
@@ -8,6 +9,7 @@
       "tags": ["DSA", "Coding", "Algorithms"]
     },
     {
+      "id": "2",
       "title": "React Documentation",
       "description": "Official documentation for React.js, a JavaScript library for building user interfaces.",
       "image": "https://reactjs.org/logo-og.png",
@@ -16,6 +18,7 @@
       "tags": ["React", "JavaScript", "Web Development"]
     },
     {
+      "id": "3",
       "title": "MDN Web Docs",
       "description": "Comprehensive documentation for HTML, CSS, and JavaScript with interactive examples.",
       "image": "https://developer.mozilla.org/mdn-social-share.png",
@@ -24,6 +27,7 @@
       "tags": ["HTML", "CSS", "JavaScript", "Docs"]
     },
     {
+      "id": "4",
       "title": "Spring Boot Documentation",
       "description": "Guides and reference documentation for Spring Boot, a Java framework for microservices.",
       "image": "https://spring.io/img/spring.svg",
@@ -32,6 +36,7 @@
       "tags": ["Spring Boot", "Java", "Microservices"]
     },
     {
+      "id": "5",
       "title": "Python Crash Course",
       "description": "A beginner-friendly book covering Python fundamentals and real-world projects.",
       "image": "https://images.unsplash.com/photo-1735656244034-6b2b53d2657d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D",

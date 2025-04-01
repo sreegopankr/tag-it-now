@@ -23,6 +23,7 @@ const AllBookmarks = () => {
         <div className='mt-5 mx-6 flex flex-col gap-1'>
             {
               bookmarks.map((link, index)=> {
+                // console.log(link.id)
                 return <Card link={link} key={index} setShowEdit={setShowEdit}/>
               })
             }
